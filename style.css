@@ -1,0 +1,258 @@
+body {
+  background-color: Black;
+  font-family: Roboto, sans-serif;
+  /*font-family: 'IM Fell French Canon SC', serif;*/
+  transition: 10s;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  align-items: center;
+  display: flex;
+}
+
+li {
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  color: #283747;
+  font-family: 'IM Fell French Canon SC', serif;
+  font-weight: 400;
+  margin: 0;
+  text-shadow: 1px 1px 1px white;
+}
+
+.zoomin {
+  transition: 1s;
+}
+
+.zoomin:hover {
+  transform: scale(1.2);
+}
+
+.whiteglow {
+  text-shadow: 1px 1px 1px white;
+}
+
+p, .projlink {
+  font-size: 20px;
+  font-family: 'IM Fell French Canon SC', serif;
+}
+
+p, ul, a, .quarnsubtitle {
+  text-shadow: 1px 1px 2px #000000;
+  color: rgb(180, 180, 180);
+}
+
+nav {
+  display: flex;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  justify-content: flex-end;
+}
+
+nav a, footer a {
+  margin: 0;
+  padding: 0 10px;
+}
+
+a:hover {
+  color: rgb(180, 180, 180);
+  text-decoration: none;
+}
+
+.titles {
+  font-family: monospace, serif;
+}
+
+#goldbtn:hover {
+  color: #ffcc00;
+}
+
+.horus {
+  display: inline-block;
+  position: sticky;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.ascend {
+  display: none;
+  position: sticky;
+  top: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  color: #eeeeee;
+  font-family: "Space Mono", sans-serif;
+}
+
+.actions {
+  display: none;
+  position: relative;
+  top: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  color: #eeeeee;
+  font-family: monospace, sans-serif;
+}
+
+.actions:hover {
+  text-shadow: 1px 1px 2px #00004d, 0 3px 1em #ffffff;
+}
+
+.ascend:hover {
+  color: #ffcc00;
+  text-shadow: 1px 1px 2px #fff, 0 3px 1em #ffcc00;
+}
+
+@media only screen and (max-width: 480px) {
+  .actions {
+    display: block;
+  }
+}
+
+.goldtotal {
+  display: none;
+  position: sticky;
+  top: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  color: #ffcc00;
+  font-family: monospace, sans-serif;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.projlink {
+  /*text-shadow: 1px 1px 2px #00004d, 0 0 1.5em #00004d, 0 0 2em #00004d;*/
+
+  color: rgb(180, 180, 180);
+}
+
+.projlink:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px #00004d, 0 3px 1em #ffffff;
+}
+
+#navlink:link, #navlink:visited {
+  color: rgb(180, 180, 180);
+  text-shadow: none;
+  text-decoration: none;
+}
+
+#navlink:hover {
+  color: rgb(255, 255, 255);
+  /*text-shadow: 1px 1px 2px #ffffff, 0 0 1.5em #ffffff, 0 0 2em #ffffff;*/
+  text-shadow: 1px 1px 2px #ffffff, 0 2px 6px #ffffff, 0 3px 6px #1f4060;
+  /*box-shadow: 1px 1px 2px #000099;*/
+  text-decoration: none;
+}
+
+.childquarn {
+  color: #990000;
+  transition: 6s;
+}
+
+.jumbotron {
+  align-items: center;
+  justify-content: center;
+  background-image: url("blueorangelakecrop.jpeg");
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  background-size: 100% 100%;
+  color: #ffffff;
+  display: flex;
+  height: 400px;
+  transition: 6s;
+}
+
+.jumbotron  h2 {
+  color: #17202a;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px white, 0 0 1em #000099, 0 0 0.2em #000099;
+}
+
+.jumbotron h3 {
+  color:  #17202a;
+  justify-content: center;
+  margin: 0 0 30px;
+  text-align: center;
+  text-shadow: 1px 1px 2px white, 0 0 1em #000099, 0 0 0.2em #000099;
+}
+
+section .row img {
+  height: 350px;
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.textcolor {
+  color: #283747;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.portrait {
+  height: 300px;
+  width:  275px;
+}
+
+.stupapic {
+  -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
+  border: .2rem solid #b4b4b4;
+}
+
+#moonshinepic {
+  height: 450px;
+  justify-content: center;
+  width: 450px;
+}
+
+figure img {
+  height: auto;
+  width: 100%;
+}
+
+figure {
+  margin-bottom: 30px;
+}
+
+footer {
+  align-items: center;
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+footer .col-sm-4, footer .col-sm-1 {
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  height: 32px;
+  width: 32px;
+}

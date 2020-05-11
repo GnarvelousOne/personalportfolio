@@ -1,5 +1,7 @@
 body {
-  background-color: Black;
+  background-color: #000000;
+  /*background-image: url('');*/
+  filter: grayscale(0%);
   font-family: Roboto, sans-serif;
   /*font-family: 'IM Fell French Canon SC', serif;*/
   transition: 10s;
@@ -62,7 +64,7 @@ nav a, footer a {
 }
 
 a:hover {
-  color: rgb(180, 180, 180);
+  color: #b4b4b4;
   text-decoration: none;
 }
 
@@ -70,7 +72,7 @@ a:hover {
   font-family: monospace, serif;
 }
 
-#goldbtn:hover {
+.gold:hover {
   color: #ffcc00;
 }
 
@@ -120,6 +122,11 @@ a:hover {
   }
 }
 
+
+#tetrissecret {
+display: none;
+}
+
 .goldtotal {
   display: none;
   position: sticky;
@@ -134,23 +141,22 @@ a:hover {
 
 .projlink {
   /*text-shadow: 1px 1px 2px #00004d, 0 0 1.5em #00004d, 0 0 2em #00004d;*/
-
-  color: rgb(180, 180, 180);
+  color: #b4b4b4;
 }
 
 .projlink:hover {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-shadow: 1px 1px 2px #00004d, 0 3px 1em #ffffff;
 }
 
 #navlink:link, #navlink:visited {
-  color: rgb(180, 180, 180);
+  color: #b4b4b4;
   text-shadow: none;
   text-decoration: none;
 }
 
 #navlink:hover {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   /*text-shadow: 1px 1px 2px #ffffff, 0 0 1.5em #ffffff, 0 0 2em #ffffff;*/
   text-shadow: 1px 1px 2px #ffffff, 0 2px 6px #ffffff, 0 3px 6px #1f4060;
   /*box-shadow: 1px 1px 2px #000099;*/

@@ -11,10 +11,18 @@ let getdisk = document.getElementById('getdisk');
 let ascendbtn = document.getElementById('ascendbtn');
 let titles = document.getElementById('titles');
 let titlebtn = document.getElementById('titlebtn');
+let tetris1 = document.getElementById('tetris1');
+let tetris2 = document.getElementById('tetris2');
+let tetris3 = document.getElementById('tetris3');
+let tetris4 = document.getElementById('tetris4');
+let tetrissecret = document.getElementById('tetrissecret');
+let tetristext = document.getElementById('tetristext');
+
+/*  Need a better way to read a txt file or to get data from python web scraper
 
 document.getElementById('fileInput').addEventListener('change', function selectedFileChanged() {
   if (this.files.length === 0) {
-    console.log('No file selected.');
+    console.log('No file selected, bah humbug.');
     return;
   }
 
@@ -25,7 +33,7 @@ document.getElementById('fileInput').addEventListener('change', function selecte
     var readerlist = reader.result.split(";");
     // titles.innerHTML = readerlist[rgb(readerlist.length)];
     for (let i = 0; i <= readerlist.length; i ++) {
-      setInterval(function(){ titles.innerHTML = "<i>Here are the current articles posted on c4ss:  </i>" + readerlist[rgb(readerlist.length)]; }, 3000);
+      setInterval(function(){ titles.innerHTML = "<i>Here are the current articles posted on c4ss:  </i><br>" + readerlist[rgb(readerlist.length-1)]; }, 3000);
     };
     // titles.innerHTML = readerlist[2];
     // titles.innerHTML = reader.result;
@@ -53,6 +61,41 @@ document.getElementById('fileInput').addEventListener('change', function selecte
 function rgb(num) {
   return Math.floor(Math.random() * num);
 }
+
+tetris1.onclick = function () {
+  tetris1.innerHTML = "<strong>TETRIS</strong>"
+  if (tetris1.innerHTML == "<strong>TETRIS</strong>" && tetris2.innerHTML == "<strong>TETRIS</strong>" && tetris3.innerHTML == "<strong>TETRIS</strong>" && tetris4.innerHTML == "<strong>TETRIS</strong>") {
+    tetrissecret.style.display = "inline";
+  };
+};
+tetris2.onclick = function () {
+  tetris2.innerHTML = "<strong>TETRIS</strong>"
+  if (tetris1.innerHTML == "<strong>TETRIS</strong>" && tetris2.innerHTML == "<strong>TETRIS</strong>" && tetris3.innerHTML == "<strong>TETRIS</strong>" && tetris4.innerHTML == "<strong>TETRIS</strong>") {
+    tetrissecret.style.display = "inline";
+  };
+};
+tetris3.onclick = function () {
+  tetris3.innerHTML = "<strong>TETRIS</strong>"
+  if (tetris1.innerHTML == "<strong>TETRIS</strong>" && tetris2.innerHTML == "<strong>TETRIS</strong>" && tetris3.innerHTML == "<strong>TETRIS</strong>" && tetris4.innerHTML == "<strong>TETRIS</strong>") {
+    tetrissecret.style.display = "inline";
+  };
+};
+tetris4.onclick = function () {
+  tetris4.innerHTML = "<strong>TETRIS</strong>"
+  if (tetris1.innerHTML == "<strong>TETRIS</strong>" && tetris2.innerHTML == "<strong>TETRIS</strong>" && tetris3.innerHTML == "<strong>TETRIS</strong>" && tetris4.innerHTML == "<strong>TETRIS</strong>") {
+    tetrissecret.style.display = "inline";
+  };
+};
+
+tetrissecret.onclick = function () {
+  if (quarncolor.style.backgroundImage != 'url("tetris.jpeg")') {
+    quarncolor.style.backgroundImage = 'url("tetris.jpeg")';
+    //quarncolor.style.filter = 'grayscale(100%)';
+
+  } else {
+    quarncolor.style.backgroundImage = '';
+  };
+};
 
 bgi.onmouseover = function () {
   bgi.style.filter = 'grayscale(0%)';
@@ -92,7 +135,12 @@ function quarnColor() {
 };
 
 function quarnAcid() {
-  document.querySelector('html').style.backgroundColor = "#ffffff";
+  quarncolor.style.backgroundColor = "#ffffff";
+  quarncolor.style.transition = '5s';
+};
+
+function goldHover() {
+  goldbtn.style.color = "#ffcc00";
 };
 
 var inventory = "";
@@ -174,7 +222,9 @@ window.onscroll = function() {myFunction()};
 quarncolor.onscroll = function() {quarnColor()};
 quarncolor.onkeypress = function() {quarnColor()};
 goldbtn.onclick = function() {getGold()};
-ascendbtn.onclick = function() {quarnAcid()};
+goldbtn.onmouseover = function() {goldHover()};
+ascendbtn.onmouseover = function() {quarnAcid()};
+ascendbtn.onmouseout = function() {quarnColor()};
 // titlebtn.onclick = function() {readTextFile("titles.txt", "titlebtn")};
 
 function myFunction() {

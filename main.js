@@ -61,7 +61,7 @@ document.getElementById('fileInput').addEventListener('change', function selecte
 function rgb(num) {
   return Math.floor(Math.random() * num);
 }
-
+/*
 tetris1.onclick = function () {
   tetris1.innerHTML = "<strong>TETRIS</strong>"
   if (tetris1.innerHTML == "<strong>TETRIS</strong>" && tetris2.innerHTML == "<strong>TETRIS</strong>" && tetris3.innerHTML == "<strong>TETRIS</strong>" && tetris4.innerHTML == "<strong>TETRIS</strong>") {
@@ -96,6 +96,7 @@ tetrissecret.onclick = function () {
     quarncolor.style.backgroundImage = '';
   };
 };
+//*/
 
 bgi.onmouseover = function () {
   bgi.style.filter = 'grayscale(0%)';
